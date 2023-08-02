@@ -20,3 +20,5 @@ console.log(person1);
 console.log(person1.dob.getFullYear());
 console.log(person1.getBirthYear());
 console.log(person1.getFullName());
+
+
