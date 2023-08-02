@@ -30,18 +30,35 @@ const jsxElement=<p>I am a JSX element</p>
       // ReactDOM has the render method and the render method takes two arguments
       ReactDOM.render(jsxElement, rootElement)
 
-      const header = (
-    <header>
+      
+const style = { border: '2px solid orange', color: 'black', fontSize: '18px' }
+
+const headerStyles={
+    backgroundColor: '#61DBFB',
+        fontFamily: 'Helvetica Neue',
+        padding: 25,
+        lineHeight: 1.5,
+}
+      let header = (
+    <header
+ 
+    style={headerStyles}
+    >
       <h1>Welcome to 30 Days Of React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
     </header>
   )
 
+
 ReactDOM.render(header, rootElement)
 
+// JSX element, main
+const mainStyles = {
+        backgroundColor: '#F3F0F5',
+      }
 const main=(
-<main>
+<main style={mainStyles}>
     <p>Prerequisite to get started react.js:</p>
     <ul>
       <li>HTML</li>
@@ -53,8 +70,12 @@ const main=(
 
 )
 //jsx
+const footerStyles = {
+        backgroundColor: '#61DBFB',
+      }
+
 const footer=(
-<footer>
+<footer style={footerStyles}>
     <p>Copyright 2020</p>
     </footer>
 
@@ -70,6 +91,20 @@ const app =(
     </div>
 
 )
+const title=<h1  className='title'>Getting started with React</h1>
+const inputField=(
+<div>
+    <label htmlFor="firstname"> First Name</label>
+    <input type='text' id='firstname' placeholder='First Name' />
+    </div>
+
+
+)
+
+
+
+
+
 ReactDOM.render(app,rootElement)
 
       </script>
