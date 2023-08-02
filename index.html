@@ -16,11 +16,62 @@
     crossorigin
     src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
   ></script>
-  
+
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel" >
         console.log(React);
+
+const rootElement= document.querySelector('.root')
+
+const jsxElement=<p>I am a JSX element</p>
+
+ // we render the JSX element using the ReactDOM package
+      // ReactDOM has the render method and the render method takes two arguments
+      ReactDOM.render(jsxElement, rootElement)
+
+      const header = (
+    <header>
+      <h1>Welcome to 30 Days Of React</h1>
+      <h2>Getting Started React</h2>
+      <h3>JavaScript Library</h3>
+    </header>
+  )
+
+ReactDOM.render(header, rootElement)
+
+const main=(
+<main>
+    <p>Prerequisite to get started react.js:</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>  
+
+    </main>
+
+)
+//jsx
+const footer=(
+<footer>
+    <p>Copyright 2020</p>
+    </footer>
+
+)
+//The best way to render all of the three JSX elements is by wrapping them all in a parent JSX element or putting them in an array
+const app =(
+<div>
+  {header}  
+  {main}
+  {jsxElement}
+  {footer}
+    
+    </div>
+
+)
+ReactDOM.render(app,rootElement)
+
       </script>
 </body>
 </html>
