@@ -86,17 +86,7 @@ const footer=(
     </footer>
 
 )
-//The best way to render all of the three JSX elements is by wrapping them all in a parent JSX element or putting them in an array
-const app =(
-<div>
-  {header}  
-  {main}
-  {jsxElement}
-  {footer}
-    
-    </div>
 
-)
 const title=<h1  className='title'>Getting started with React</h1>
 const inputField=(
 <div>
@@ -106,8 +96,38 @@ const inputField=(
 
 
 )
+//Injecting data to jsx
+const myName='Bellah Kabonge';
+const date='2nd August 2023';
+const statement='I love Coding ';
+const  role="Fullstack Developer";
+const skills='HTML,CSS,JS,PYTHON,REACT';
 
+const section= (
+    <section>
+        <div className="header-wrapper">
+            <h1>{myName}</h1>
+            <h2>{role}</h2>
+            <h3>{statement}</h3>
+             <h4>{skills} </h4>  
+             <p>{myName}</p>
+             <small>Date: {date}</small>
 
+            </div>
+        </section>
+)
+//The best way to render all of the three JSX elements is by wrapping them all in a parent JSX element or putting them in an array
+const app =(
+<div>
+  {header}  
+  {main}
+  {jsxElement}
+  {section}
+  {footer}
+    
+    </div>
+
+)
 
 
 
