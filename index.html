@@ -133,6 +133,7 @@ const personAge = <p> {age}</p>
 
 //Injecting an array to jsx
 const techs = ['HTML', 'CSS', 'JavaScript']
+const techsFormatted = techs.map((tech) => <li>{tech}</li>)
 
 // JSX element, main
 const mainTwo = (
@@ -150,9 +151,6 @@ const mainTwo = (
   </main>
 )
 //Injectin an object to jsx
-const welcome = 'Welcome to 30 Days Of React'
-      const title2 = 'Getting Started React'
-      const subtitle = 'JavaScript Library'
       const author = {
         firstName: 'Asabeneh',
         lastName: 'Yetayeh',
@@ -181,7 +179,7 @@ const app =(
   {jsxElement}
   {mainTwo}
   {personAge}
- 
+ {techsFormatted}
   {section}
   {footer}
     
