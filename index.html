@@ -131,6 +131,24 @@ const currentYear = new Date().getFullYear()
 const age = currentYear - yearBorn
 const personAge = <p> {age}</p>
 
+//Injecting an array to jsx
+const techs = ['HTML', 'CSS', 'JavaScript']
+
+// JSX element, main
+const mainTwo = (
+  <main>
+    <div className='main-wrapper'>
+      <p>
+        Prerequisite to get started{' '}
+        <strong>
+          <em>react.js</em>
+        </strong>
+        :
+      </p>
+      <ul>{techs}</ul>
+    </div>
+  </main>
+)
 
 //The best way to render all of the three JSX elements is by wrapping them all in a parent JSX element or putting them in an array
 const app =(
@@ -138,6 +156,9 @@ const app =(
   {header}  
   {main}
   {jsxElement}
+  
+  {mainTwo}
+  {personAge}
   {section}
   {footer}
     
